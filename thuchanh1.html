@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <p id="kq"></p>
+    <hr>
+    <input type="text" id="n">
+    <button type="button" onclick="tong()">tinh</button>
+    <p id="kq1"></p>
 </body>
 </html>
+<script>
+    let i=0;let text="";
+    for (i=0;i<5;i++)
+    {
+        text=text+"the number is " +i+ "<br/>"
+    }
+    document.getElementById("kq").innerHTML=text;
+    function tong(){
+        let i=0;let t=0;
+        let n=parseInt(document.getElementById("n").value);
+        for (i=0;i<=n;i++) t=t+i;
+        document.getElementById("kq1").innerHTML="tong cac so tu 1->"+n+"="+t;
+
+    }
+</script>
